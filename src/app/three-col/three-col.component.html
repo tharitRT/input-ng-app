@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="first-col">
+     
+        <input type="number" value="{{this.input}}" name="userInput" (keydown.enter)="onSubmitNumber($event)" >
+     
+    </div>
+    <div class="second-col">
+      <select name="typeSelect" id="typeSelect" (change)="onTypeChange($event)">
+        <option value="prime">isPrime</option>
+        <option value="fibonacci">isFibonacci</option>
+      </select>
+    </div>
+    <div class="third-col">
+      <h4>{{this.result}}</h4>
+    </div>
+  </div>
+  
+  
